@@ -16,6 +16,9 @@ public class ChromeBrowserTest {
 
         // Open the URL in to the browser
         driver.get(baseUrl);
+        
+        //added wait Time 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         //Print the title of the page.
         System.out.println("Page title is : " + driver.getTitle());
@@ -28,7 +31,7 @@ public class ChromeBrowserTest {
 
         //Print the email to email field
         WebElement email = driver.findElement(By.name("username"));
-        email.sendKeys("iamdon@googly.com");
+        email.sendKeys("iamboss@googly.com");
 
         //Enter the password in to the password field
         WebElement pass = driver.findElement(By.name("password"));
