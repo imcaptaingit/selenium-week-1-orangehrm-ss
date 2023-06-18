@@ -40,7 +40,7 @@ public class ChromeBrowserTest {
         //close the browser
         driver.close();
 
-        //Please note the website has some issues. It does enter the email and password sometime and sometimes it doesn't.
+   
 
     }
 
